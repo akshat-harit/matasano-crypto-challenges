@@ -62,11 +62,11 @@ def break_single_byte_xor(inp):
             max_similar = output[key][0]
             output_key = key
             output_text = output[key][1]
-    return output_key, output_text
+    return output_key, output_text, max_similar
 
 def test():
     inp = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
-    key, out = break_single_byte_xor(inp)
+    key, out, _ = break_single_byte_xor(inp)
     print("Key :", key, "\nOutput :", out)
 
 if __name__ == "__main__":
