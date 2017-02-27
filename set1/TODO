@@ -1,0 +1,2 @@
+Change all strings to bytes and remove the mess of conversion using decode and encode functions provided in python
+
