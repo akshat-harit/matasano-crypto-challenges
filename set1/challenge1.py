@@ -1,10 +1,10 @@
 def Base64Table():
     table = {}
-    for i in xrange(0,26):
+    for i in range(0,26):
         table[i] = chr(ord('A') + i)
-    for i in xrange(26,52):
+    for i in range(26,52):
         table[i] = chr(ord('a')+i-26)
-    for i in xrange(52,62):
+    for i in range(52,62):
         table[i] = chr(ord('0')+i - 52) 
     table[62] = '+'
     table[63]= '/'
